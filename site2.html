@@ -1,0 +1,125 @@
+<DOCTYPE html>
+<html lang= "pt-BR">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name= "viewport" content="width=devide-width, initial-scale=1.0">
+    <meta name= "descripion" content="make-up">
+    <title> melhores maquiagens </title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    
+<\head>
+
+<body>
+    <header class="cabecalho">
+        <h1>Meu Site</h1>
+        <button id="pesquisa">Abrir pesquisa</button>
+        <dialog id="minha-pesquisa">
+            <h2>principais pesquisas:</h2>
+            <p>batom</p>
+            <p>blush</p>
+            <p>gloss </p>
+            <button id="fechar-pesquisa">Fechar</button>
+        </dialog>
+    
+        <script>
+            const botaoMinhaPesquisa = document.getElementById('pesquisa');
+            const botaoFecharPesquisa = document.getElementById('fechar-pesquisa');
+            const minhaPesquisa = document.getElementById('minha-pesquisa');
+    
+            botaoMinhaPesquisa.addEventListener('click', () => {
+                minhaPesquisa.showModal();
+            });
+    
+            botaoFecharPesquisa.addEventListener('click', () => {
+                minhaPesquisa.close();
+            });
+        </script>
+        <div class="header-content"></div>     
+
+        <img class="cabecalho-imagem"  src="make.svg" alt="foto de maquiagens " width="240" height="118" >
+        <h1 style="margin-bottom: 10px;"></h1>
+        <nav class="cabecalho-cátalogo">  
+            <button id="mostrar principais compras">Abrir catálogo</button>    
+
+            <a class="cabecalho-cátalogo-item"> kit básico</a> 
+            <a class="cabecalho-cátalogo-item"> kit médio</a>  
+            <a class="cabecalho-cátalogo-item"> kit de alto nível</a>  
+            <dialog id="meu-catálogo">
+                <h2>catálogo</h2>
+                <p>o kit básico apresenta um gloss e um rímel, esse kit pode custar entre 80 a 500 reais </p>
+                <p>o kit médio apresenta: batom, gloss, rímel, base e blush, com o valor do kit variando entre 200 a 1000 reais </p>
+                <p>o kit de alto nível apresenta: batom, gloss, rímel, base , blush, sombra e delineador, esse kit pode custar entre 280 a 1400 reais </p>
+                <button id="fechar-catálogo">Fechar</button>
+            </dialog>
+        
+            <script>
+                const botaoMostrarCatálogo = document.getElementById('mostrar-catálogo');
+                const botaoFecharCatálogo = document.getElementById('fechar-catálogo');
+                const meuCatálogo = document.getElementById('meu-catálogo');
+        
+                botaoMostrarCatálogo.addEventListener('click', () => {
+                    meuCatálogo.showModal();
+                });
+        
+                botaoFecharCatálogo.addEventListener('click', () => {
+                    meuCatálogo.close();
+                });
+            </script>
+
+            <button id="mostrar-cátalogo">Abrir cátalogo</button>   
+            <dialog id="cátalogo">
+                <h2>cátalogo sobre os produtos</h2>
+                <p>gloss: é um produto hidratante labial que trás brilho e cor para lábios, temos de diversas marcas, como mac e sephora; </p>
+                <p>batom: quando comparado ao gloss, apresenta maior pigmentação e durabilidade porém hidrata menos os lábios; </p>   
+                <p>rímel: é um produto que pode ter diversas funções para os cílios, pode dar volume e aumentar o comprimento, pigmentar de diversas cores, sendo a mais comum a cor preta;</p>    
+                <p>base: deixa a pele mais homogênea, sem manchas ou com redução delas (temporariamente);</p>   
+                <button id="fechar-cátalogo">Fechar</button>
+            </dialog>
+        
+            <script>
+                const botaoMostrarCátalogo = document.getElementById('mostrar-cátalogo');
+                const botaoFecharCátalogo = document.getElementById('fechar-cátalogo');
+                const Catálogo = document.getElementById('Catálogo');
+        
+                botaoMostrarCatálogo.addEventListener('click', () => {
+                    Cátalogo.showModal();
+                });
+        
+                botaoFecharCatálogo.addEventListener('click', () => {
+                    Cátalogo.close();
+                });
+            </script> 
+
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <section class="conteudo-secundario">
+            <div class="conteudo-principal-escrito">
+                <h1 class="conteudo-principal-escrito-titulo">make-up</h1>
+                <h2 class="conteudo-principal-escrito-subtitulo">nova forma de comprar maquiagens</h2>
+                <h2 class="conteudo-principal-escrito-subtitulo">sobre nós:</h2>
+                <p>somos grandes fãs de maquiagens e queremos facilitar a compra desses produtos que aumentam a autoestima de muitas pessoas</p>
+                <button class="conteudo-principal-escrito-botao">me adicione</button>
+            </div>
+                <img class="conteudo-principal-imagem"src="make2.svg" alt="foto de makes " width="567" height="361">
+        </section>
+       
+
+        <section>
+          <h3 class="conteudo-secundario-titulo">Por que usar maquiagens?</h3>
+          <p class="conteudo-secundario-paragrafo">1.<strong>pode trazer benefícios para a saúde</strong>, tendo em vista que muitos produtos possuem proteção uv e são de fácil aplicação, cuidando assim da saúde da pele</p>
+          <p class="conteudo-secundario-paragrafo">2.cuida do bem estar da pessoa, ajudando em momentos de insegurança e cultivando o autocuidado, pode ser também uma terapia <p>
+          <p class="conteudo-secundario-paragrafo">3.pode ser usado no dia a dia e também em momentos mais especiais como em comemorações. </p>
+
+        </section>
+
+    </main>
+    <footer class="rodape">
+        <img class="rodape-imagem" scr="make.svg">
+        <p>make-up</p>
+    </footer>
+
+    </body>
+    </html>
